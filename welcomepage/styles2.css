@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+                    margin: 0;
+                    font-family: Arial, sans-serif;
+                    background-color: #f9f9f9;
+                    color: #333;
+}
+
+header {
+                    background-color: #007bff;
+                    color: white;
+                    padding: 1rem 2rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    position: sticky;
+                    top: 0;
+                    z-index: 1000;
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    font-family: Oswald, sans-serif;
+}
+
+nav ul {
+                    list-style: none;
+                    display: flex;
+                    gap: 1rem;
+                    margin: 0;
+                    padding: 0;
+}
+
+nav ul li a {
+                    color: white;
+                    text-decoration: none;
+                    font-weight: bold;
+                    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+                    color: #ffd700;
+}
+
+/* Projects Section */
+main .projects {
+                    padding: 2rem 1rem;
+                    max-width: 1200px;
+                    margin: auto;
+}
+
+main .projects h1 {
+                    font-size: 2rem;
+                    color: #007bff;
+                    text-align: center;
+                    margin-bottom: 2rem;
+}
+
+.project-list {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    gap: 1.5rem;
+}
+
+.project {
+                    background: white;
+                    padding: 1.5rem;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.3s;
+}
+
+.project:hover {
+                    transform: translateY(-5px);
+}
+
+.project h2 {
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                    color: #333;
+}
+
+.project p {
+                    font-size: 1rem;
+                    line-height: 1.6;
+                    color: #555;
+}
+
+#load-more {
+                    display: block;
+                    margin: 2rem auto;
+                    padding: 0.8rem 2rem;
+                    font-size: 1rem;
+                    background-color: #007bff;
+                    color: white;
+                    border: none;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    transition: background-color 0.3s;
+}
+
+#load-more:hover {
+                    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+                    background-color: #333;
+                    color: white;
+                    text-align: center;
+                    padding: 1rem 0;
+                    margin-top: 2rem;
+}
+
+footer p {
+                    margin: 0;
+                    font-size: 0.9rem;
+}
